@@ -106,7 +106,7 @@ console.log(`String
 multiple
 lines`);
 
-*/
+
 
 const age = 15;
 
@@ -117,7 +117,6 @@ if (age >= 18) {
       console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
 };
 
-
 const birthYear = 1991;
 let century;
 
@@ -127,3 +126,25 @@ if (birthYear <= 2000) {
       century = 21;
 };
 console.log(century);
+
+*/
+
+// Type Conversion 
+const inputYear = '1991'; // string
+console.log(Number(inputYear), inputYear); // 1991 is converted to number
+console.log(Number(inputYear) + 18); // Result is 2009
+
+console.log(Number('Jonas')); // NaN
+console.log(typeof Nan); // the weird result is number (invalid number)
+
+console.log(String(23), 23); // Converted to number
+
+// Type Coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3); // Result is 10
+console.log('23' * '2');
+
+let n = '1' + 1; // Converted to String
+n = n - 1; // But here - automatically converted to number and devide -1
+console.log(n); // The result is 10 ('10' + 1 = 11 - 1 = 10)
+
