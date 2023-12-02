@@ -70,7 +70,7 @@ console.log(ageSarah >= 18); // result is false. She is 5 years old.
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
-*/
+
 
 const now = 2023;
 const ageVasil = now - 1991;
@@ -85,3 +85,45 @@ console.log(x, y);
 
 const averageAge = (ageVasil + ageSarah) / 2
 console.log(ageVasil, ageSarah, averageAge);
+
+
+const firstName = 'John';
+const job = 'teacher';
+const birthDate = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthDate) + ' years old ' + job + '!';
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthDate} years old ${job}!`;
+console.log(jonasNew);
+
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String
+multiple
+lines`);
+
+*/
+
+const age = 15;
+
+if (age >= 18) {
+      console.log('Sarah can start driving license 🚗'); // Combination for emoticons (CMND + CTR + SPACE);
+} else {
+      const yearsLeft = 18 - age;
+      console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+};
+
+
+const birthYear = 1991;
+let century;
+
+if (birthYear <= 2000) {
+      century = 20;
+} else {
+      century = 21;
+};
+console.log(century);
