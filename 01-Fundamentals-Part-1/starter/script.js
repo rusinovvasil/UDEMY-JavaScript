@@ -35,7 +35,7 @@ console.log(typeof null); // object is not corrected in legacy reasons
 
 
 let age = 30; // declare variable
-age = 31; // that changes from 30 to 31 
+age = 31; // that changes from 30 to 31
 
 const birthYear = 1991; // const can not be changed
 birthYear = 1990; // it should not work
@@ -79,7 +79,7 @@ const ageSarah = now - 2018
 console.log(now - 1991 > now - 2018);
 
 let x, y;
-x = y = 25 - 10 - 5; //  
+x = y = 25 - 10 - 5; //
 x = y = 10, x = 10
 console.log(x, y);
 
@@ -129,7 +129,7 @@ console.log(century);
 
 
 
-// Type Conversion 
+// Type Conversion
 const inputYear = '1991'; // string
 console.log(Number(inputYear), inputYear); // 1991 is converted to number
 console.log(Number(inputYear) + 18); // Result is 2009
@@ -173,7 +173,7 @@ if (height) {
 }
 
 
-*/
+
 
 // Equality Operators: == vs. ===
 const age = "18";
@@ -194,3 +194,33 @@ if (favourite === 23) { // 22 === 23 --> FALSE
 }
 
 if (favourite !== 23) console.log('Why not 23?');
+
+
+*/
+
+
+// Boolean Logic
+// Basic Boolean Logic: THE AND, OR & NOT OPERATORS
+
+// Logical Operators
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense); // 
+
+// if (hasDriversLicense && hasGoodVision) {
+//       console.log('Sarah is able to drive!');
+// } else {
+//       console.log('Someone else should drive...');
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+      console.log('Sarah is able to drive!');
+} else {
+      console.log('Someone else should drive...');
+}
