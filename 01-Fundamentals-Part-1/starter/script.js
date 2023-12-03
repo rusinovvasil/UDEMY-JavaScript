@@ -148,7 +148,7 @@ let n = '1' + 1; // Converted to String
 n = n - 1; // But here - automatically converted to number and devide -1
 console.log(n); // The result is 10 ('10' + 1 = 11 - 1 = 10)
 
-*/
+
 
 // Truthy and Falsy Values
 // 5 falsy values: 0, '', undefined, null, Nan
@@ -171,3 +171,26 @@ if (height) {
 } else {
       console.log('Height is UNDEFINED');
 }
+
+
+*/
+
+// Equality Operators: == vs. ===
+const age = "18";
+if (age === 18) console.log('You just became an adult :D (strict)');
+
+if (age == 18) console.log('You just became an adult :D (loose)');
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) { // 22 === 23 --> FALSE
+      console.log('Cool! 23 is an amazing number!');
+} else if (favourite === 7) {
+      console.log('7 is also a cool number!');
+} else {
+      console.log('Number is not 23 or 7');
+}
+
+if (favourite !== 23) console.log('Why not 23?');
