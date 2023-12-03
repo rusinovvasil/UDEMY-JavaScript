@@ -127,7 +127,7 @@ if (birthYear <= 2000) {
 };
 console.log(century);
 
-*/
+
 
 // Type Conversion 
 const inputYear = '1991'; // string
@@ -148,3 +148,26 @@ let n = '1' + 1; // Converted to String
 n = n - 1; // But here - automatically converted to number and devide -1
 console.log(n); // The result is 10 ('10' + 1 = 11 - 1 = 10)
 
+*/
+
+// Truthy and Falsy Values
+// 5 falsy values: 0, '', undefined, null, Nan
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+      console.log("Don't spend it all ;)");
+} else {
+      console.log("You should get a job!");
+}
+
+let height = 0;
+if (height) {
+      console.log('Yay! Height is defined');
+} else {
+      console.log('Height is UNDEFINED');
+}
