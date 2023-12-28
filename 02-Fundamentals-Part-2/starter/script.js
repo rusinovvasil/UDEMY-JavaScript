@@ -126,7 +126,6 @@ console.log(yearsUntilRetirement(1950, 'Mike'));
 
 
 // Introduction to Arrays
-
 const friend1 = 'Michael';
 const friend2 = 'Steven';
 const friend3 = 'Peter';
@@ -165,4 +164,35 @@ console.log(ages);
 
 */
 
+
 // Basic Array Operations
+const friends = ['Michael', 'Steven', 'Peter'];
+
+const newLength = friends.push('Jay'); // Add in last positionelements
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John'); // Add in beginning
+console.log(friends);
+
+friends.pop(); // Remove last element
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // Remove the first element
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('Peter')) {
+    console.log("You have a friend called Peter");
+} else {
+    console.log("You don't have a friend called Peter");
+}
