@@ -162,7 +162,7 @@ console.log(age1, age2, age3);
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
 
-*/
+
 
 
 // Basic Array Operations
@@ -196,3 +196,49 @@ if (friends.includes('Peter')) {
 } else {
     console.log("You don't have a friend called Peter");
 }
+
+*/
+
+
+// Introduction to Objects
+const vasilArray = [
+    'Vasil',
+    'Rusinov',
+    2023 - 1991,
+    'driver',
+    ['Michael', 'Peter', 'Steven']
+];
+
+const vasil = {
+    firstName: 'Vasil',
+    lastName: 'Rusinov',
+    age: 2023 - 1991,
+    job: 'driver',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+
+// Dot vs. Bracket Notation
+console.log(vasil);
+
+console.log(vasil.lastName);
+console.log(vasil['lastName']);
+
+const nameKey = 'Name';
+console.log(vasil['first' + nameKey]);
+console.log(vasil['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Vasil? Chose between firstName, lastName, age, job, and friends');
+
+if (vasil[interestedIn]) {
+    console.log(vasil[interestedIn]);
+} else {
+    console.log('Wrong request! Chose between firstName, lastName, age, job, and friends');
+}
+
+vasil.location = 'Bulgaria';
+vasil["instagram"] = '@rusinov28';
+console.log(vasil);
+
+// Challenge
+// "Vasil has 3 friends, and his best friend called Michael"
+console.log(`${vasil.firstName} has ${vasil.friends.length} friends, and his best friend called ${vasil.friends[0]}`);
