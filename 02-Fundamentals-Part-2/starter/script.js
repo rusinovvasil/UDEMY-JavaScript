@@ -197,7 +197,7 @@ if (friends.includes('Peter')) {
     console.log("You don't have a friend called Peter");
 }
 
-*/
+
 
 
 // Introduction to Objects
@@ -242,3 +242,35 @@ console.log(vasil);
 // Challenge
 // "Vasil has 3 friends, and his best friend called Michael"
 console.log(`${vasil.firstName} has ${vasil.friends.length} friends, and his best friend called ${vasil.friends[0]}`);
+
+*/
+
+
+// Object Methods
+const vasil = {
+    firstName: 'Vasil',
+    lastName: 'Rusinov',
+    birthYeah: 1991,
+    job: 'driver',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthYeah) {
+    //     return 2023 - birthYeah;
+    // }
+
+    calcAge: function () {
+        console.log(this);
+        return 2023 - this.birthYeah;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${vasil.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+    }
+};
+console.log(vasil.calcAge());
+
+// Challenge
+// "Vasil is a 32-year old teacher, and he has a driver's license"
+
+console.log(vasil.getSummary());
