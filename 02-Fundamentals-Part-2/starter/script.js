@@ -275,10 +275,59 @@ console.log(vasil.calcAge());
 
 console.log(vasil.getSummary());
 
-*/
+
 
 
 // Iteration : The For Loop
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep}`);
 }
+
+*/
+
+
+// Looping Arrays. Breaking and continuing
+const vasilArray = [
+    'Vasil',
+    'Rusinov',
+    2023 - 1991,
+    'driver',
+    ['Michael', 'Peter', 'Steven']
+];
+
+const types = [];
+
+for (let i = 0; i < vasilArray.length; i++) {
+    // Reading from vasilArray 
+    console.log(vasilArray[i], typeof vasilArray[i]);
+
+    // Filling types array
+    // types[i] = typeof vasilArray[i];
+    types.push(typeof vasilArray[i])
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2023 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('---ONLY STRINGS---');
+for (let i = 0; i < vasilArray.length; i++) {
+    if (typeof vasilArray[i] !== 'string') continue;
+
+    console.log(vasilArray[i], typeof vasilArray[i]);
+}
+
+console.log('---BREAK WITH NUMBER---');
+for (let i = 0; i < vasilArray.length; i++) {
+    if (typeof vasilArray[i] === 'number') break;
+
+    console.log(vasilArray[i], typeof vasilArray[i]);
+}
+
