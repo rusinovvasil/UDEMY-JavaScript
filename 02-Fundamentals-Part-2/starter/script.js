@@ -283,7 +283,7 @@ for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep}`);
 }
 
-*/
+
 
 
 // Looping Arrays. Breaking and continuing
@@ -298,7 +298,7 @@ const vasilArray = [
 const types = [];
 
 for (let i = 0; i < vasilArray.length; i++) {
-    // Reading from vasilArray 
+    // Reading from vasilArray
     console.log(vasilArray[i], typeof vasilArray[i]);
 
     // Filling types array
@@ -331,3 +331,27 @@ for (let i = 0; i < vasilArray.length; i++) {
     console.log(vasilArray[i], typeof vasilArray[i]);
 }
 
+*/
+
+
+// Looping backwards and loops in loops
+
+const vasilArray = [
+    'Vasil',
+    'Rusinov',
+    2023 - 1991,
+    'driver',
+    ['Michael', 'Peter', 'Steven']
+];
+
+for (let i = vasilArray.length - 1; i >= 0; i--) {
+    console.log(i, vasilArray[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`-----------Starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+    }
+}
