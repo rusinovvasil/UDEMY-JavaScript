@@ -243,7 +243,7 @@ console.log(vasil);
 // "Vasil has 3 friends, and his best friend called Michael"
 console.log(`${vasil.firstName} has ${vasil.friends.length} friends, and his best friend called ${vasil.friends[0]}`);
 
-*/
+
 
 
 // Object Methods
@@ -274,3 +274,11 @@ console.log(vasil.calcAge());
 // "Vasil is a 32-year old teacher, and he has a driver's license"
 
 console.log(vasil.getSummary());
+
+*/
+
+
+// Iteration : The For Loop
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+}
